@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'molotregular';
+    src: url('fonts/Molot-webfont.eot');
+    src: url('fonts/Molot-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Molot-webfont.woff') format('woff'), url('fonts/Molot-webfont.ttf') format('truetype'), url('fonts/Molot-webfont.svg#molotregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background: wheat;
+}
+
+#bg {
+    width: 610px;
+    height: 635px;
+    background: url('milk.PNG');
+    opacity: 0.5;
+}
+
+#moloko {
+    width: 38.1em;
+    height: 39.6em;
+    background: #00A6F2;
+    margin: auto;
+    margin-top: 5em;
+    box-shadow: .2em .2em 1em;
+}
+
+#white-bg {
+    background: white;
+    width: 35.7em;
+    height: 33.8em;
+    top: 3em;
+    left: 1.2em;
+    position: relative;
+    overflow: hidden;
+}
+
+#white-bg:before {
+    content: '';
+    position: absolute;
+    top: 28.8em;
+    border-top: 5em solid white;
+    border-left: 5em solid #00A6F2;
+    width: 0;
+}
+
+#white-bg:after {
+    content: '';
+    position: absolute;
+    top: 28.8em;
+    left: 30.7em;
+    border-top: 5em solid white;
+    border-right: 5em solid #00A6F2;
+    width: 0;
+}
+
+#v-strip {
+    width: 56em;
+    height: 56em;
+    background: #17579E;
+    transform: rotate(45deg) skewX(-2deg) skewY(-2deg);
+    top: -32.5em;
+    left: -11.2em;
+    border: 1em solid #00A6F2;
+    position: relative;
+}
+
+#v-strip:before {
+    content: '';
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 30em;
+    height: 30em;
+    background: white;
+}
+
+#v-strip:after {
+    content: '';
+    position: absolute;
+    top: 16em;
+    left: 16em;
+    width: 25em;
+    height: 25em;
+    background: white;
+    border: 1.6em solid #00A6F2;
+}
+
+#hexagon {
+    width: 16em;
+    height: 16em;
+    position: relative;
+    background: #00A6F2;
+    top: -35.3em;
+    left: 11em;
+}
+
+#hexagon:before {
+    content: '';
+    position: absolute;
+    top: 0em;
+    left: 16em;
+    width: 0;
+    height: 0em;
+    border-left: 8em #00A6F2 solid;
+    border-bottom: 8.1em transparent solid;
+    border-top: 8em transparent solid;
+}
+
+#hexagon:after {
+    content: '';
+    position: absolute;
+    top: 0em;
+    right: 16em;
+    width: 0;
+    height: 0em;
+    border-right: 8.0em #00A6F2 solid;
+    border-bottom: 8.1em transparent solid;
+    border-top: 8.0em transparent solid;
+}
+
+#rc {
+    width: 3em;
+    height: 3em;
+    background: white;
+    transform: rotate(-45deg);
+    z-index: 2;
+    position: relative;
+    left: -7.2em;
+    top: 6.5em;
+}
+
+#rc:before {
+    content: '';
+    width: 3em;
+    height: 3em;
+    background: #00A6F2;
+    left: .7em;
+    top: .7em;
+    position: absolute;
+}
+
+#lc {
+    width: 3em;
+    height: 3em;
+    background: white;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 20.2em;
+    top: 3.5em;
+}
+
+#lc:before {
+    content: '';
+    width: 3em;
+    height: 3em;
+    background: #00A6F2;
+    left: -.7em;
+    top: -.7em;
+    position: absolute;
+}
+
+#top {
+    width: 4em;
+    height: 4em;
+    transform: rotate(45deg);
+    background: transparent;
+    top: -31.5em;
+    border: 1em #00A6F2 solid;
+    left: 16em;
+    position: relative;
+}
+
+#top:before {
+    content: '';
+    width: 3em;
+    height: 3em;
+    background: #00A6F2;
+    left: .7em;
+    top: .7em;
+    position: absolute;
+}
+
+#hexagon p {
+    position: absolute;
+    color: white;
+    font-family: molotregular;
+    font-size: 3.5em;
+    width: 9em;
+    left: -2.2em;
+    z-index: 5;
+    text-align: center;
+    margin: auto;
+}
+
+#hexagon > p > span {
+    display: inline-block;
+    transform: rotateX(180deg);
+}
